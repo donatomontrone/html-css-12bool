@@ -5,3 +5,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+[class*="col-"]{
+    background-color: #026BF6;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.bg-green{
+    background-color: #69E267;
+    border: 1px solid #026BF6;
+}
+
+.padding-col {
+    padding: 1rem;
+}
+
+span {
+    display:inline-block;
+    color: white;
+    padding: 1rem 0;
+}
+
+section.second-part{
+    margin-top: 28px;
+}
+
+section.second-part div[class*="col-"],
+section.third-part div[class*="col-"]{
+    height: 52px;
+}
+

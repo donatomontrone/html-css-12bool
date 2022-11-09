@@ -21,6 +21,18 @@
     align-items: center;
 }
 
+[class*="col-"]{
+    flex: 0 0 auto;
+}
+
+/* Colonna generica */
+
+.col {
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
 /* Divisione in 12 colonne */
 
 .col-1 {
