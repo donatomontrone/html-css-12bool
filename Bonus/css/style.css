@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.big-container{
+    background-image: url(./img/thumb-1920-860645.png) ;
+    background-position: center;
+    background-size: cover;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* Sfondi per la Pixel Art */
+
+.bg-red{
+    background-color: #ED3833;
+}
+
+.bg-black{
+    background-color: #0A0203;
+}
+
+.bg-nude{
+    background-color: #F9D1B1;
+}
+
+.bg-yellow{
+    background-color: #FDF350;
+}
+
+.bg-blue{
+    background-color: #095ECA;
+}
+
+.bg-brown{
+    background-color: #894C2E;
+}
+
+.bg-dark-yellow{
+    background-color: #EDD046;
+}
+
+.bg-orange{
+    background-color:#CE9837;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+
+/* Bordi per la Pixel Art */
+
+.b-top{
+    border-top: 4px black solid;
+}
+
+.b-bottom{
+    border-bottom: 4px black solid;
+}
+
+.b-right{
+    border-right: 4px black solid;
+}
+
+.b-left{
+    border-left: 4px black solid;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #C84D2C;
+    padding-top: 1rem;
+}
+
+div.container {
+    align-items: flex-end;
+    margin-top: 355px;
+}
+
+div#supermario {
+    width: 150px;
+    transform-origin: 50% 50%;
+    animation: jump .5s linear alternate infinite;
+}
+
+@keyframes jump {
+0%   { transform: translateY(0); }
+30%  { transform: translateY(-100px); }
+50%  { transform: translateY(0); }
+100% { transform: translateY(0); }
+}
+
+#supermario [class*="col-"]{
+    height: 12.5px;
+}
+
+
+div.coin {
+    width: 50px;
+    margin: 0 1rem;
+    animation: flipp .5s linear alternate infinite;
+} 
+
+@keyframes flipp {
+    0%   { transform: translateX(0); }
+    100% { transform: translateZ(-260px) rotateY(-180deg); }
+    }
+
+.coin [class*="col-"]{
+    height: 4px;
+}
+
+div.coin1 {
+    margin-left: 2.5rem;
+}
+
+
